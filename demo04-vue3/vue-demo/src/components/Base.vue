@@ -10,6 +10,7 @@ function buy() {
 
 let foods = ['Apple', 'Banana', 'Orange'];
 
+let url = "https://www.bilibili.com"
 </script>
 
 <template>
@@ -36,6 +37,10 @@ let foods = ['Apple', 'Banana', 'Orange'];
   <br/>
   <li v-for="(food, index) in foods">{{ food }} ==> {{ index }}</li>
 
+  <!-- 3、属性绑定 v-bind -->
+  <a v-bind:href="url">出发</a>
+  <!-- 简写为冒号，标签上的所有属性，无论是官方定义的（style、id、class）还是自定义的，属性值都可以使用v-bind进行绑定 -->
+  <a :href="url">出发</a>
 
 </template>
 
