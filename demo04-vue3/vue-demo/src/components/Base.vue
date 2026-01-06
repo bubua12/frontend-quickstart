@@ -40,6 +40,10 @@ function addPrice() {
    事件指令：v-on
    判断指令：v-if
    循环指令：v-for
+
+   属性绑定：v-bind  单向绑定：数据变化引起页面变化（数据 -> 页面）
+   表单绑定：v-model 双向绑定：数据 <-> 页面
+
    -->
   <div v-html="msg"></div>
   <button v-on:click="buy">购买</button>
